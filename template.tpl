@@ -133,22 +133,6 @@ ___TEMPLATE_PARAMETERS___
     ]
   },
   {
-    "type": "SELECT",
-    "name": "defaultProperties",
-    "displayName": "Default properties or traits",
-    "macrosInSelect": true,
-    "selectItems": [],
-    "simpleValueType": true,
-    "enablingConditions": [
-      {
-        "paramName": "call",
-        "paramValue": "load",
-        "type": "NOT_EQUALS"
-      }
-    ],
-    "help": "Select a json object variable that you want add as default properties or traits that will be included with every track or identify call."
-  },
-  {
     "type": "SIMPLE_TABLE",
     "name": "customProperties",
     "displayName": "Custom properties or traits",
@@ -219,8 +203,6 @@ if (customProperties){
     properties[property.key] = property.value;
   }
 }
-const defaultProperties = data.defaultProperties;
-for (var attrname in defaultProperties) { properties[attrname] = defaultProperties[attrname]; }
 if (call === "track"){
   let event = data.event;
   if (data.useObjectAction){
