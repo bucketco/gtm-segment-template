@@ -1,7 +1,7 @@
 homepage: "https://bucket.co/"
 documentation: "https://github.com/bucketco/gtm-segment-template/edit/main/metadata.yaml"
 versions:
-  - sha: d34a99a3ac0d5761f110c5f4335f1d5ba32b5978
-    changeNotes: Remove default properties that cause strings to be spread as an array in event payloads
+  - sha: 5a49a5bb6e45475453c38cbfa3d5ebc3c4f8e05c
+    changeNotes: Remove default properties that cause strings to be spread as an array in event payloads. Update the template name and description
   - sha: fd914d5cf82c2a98b7817013126f29ce6217da4b
     changeNotes: Initial release or the template.
